@@ -1,0 +1,94 @@
+{
+  "version": "123",
+  "responseType": "OTA",
+  "pos": {
+      "source": {
+          "pseudoCityCode": "8HP6",
+          "requestorId": {
+              "id": 1,
+              "type": 1,
+              "companyName": {
+                  "code": "TN"
+              }
+          }
+      }
+  },
+  "originDestinationInformation": [
+      {
+          "RPH": 1,
+          "departureDateTime": "2022-07-25T14:00:00",
+          "originLocation": {
+              "locationCode": "SGN"
+             
+          },
+          "destinationLocation": {
+              "locationCode": "TYO"
+          }
+      },
+      {
+          "RPH": 2,
+          "departureDateTime": "2022-07-30T18:00:00",
+          "originLocation": {
+              "locationCode": "HKG"
+          },
+          "destinationLocation": {
+              "locationCode": "SIN"
+          }
+      }
+  ],
+  "travelPreferences": {
+      "maxStopsQuantity": 1,
+      "validInterlineTicket": true,
+      "carbinPref": {
+          "cabin": "Economy"
+      },
+      "tpaExtensions": {
+          "onlineIndicator": {
+              "ind": false
+          },
+          "longConnectTime": {
+              "enable": true,
+              "min": 780,
+              "max": 1439
+          },
+          "jumpCabinLogic": {
+              "disabled": true
+          }
+      }
+  },
+  "travelerInfoSummary": {
+      "seatsRequested": 1,
+      "airTravelerAvail": {
+          "passengerTypeQuantity": {
+              "code": "ADT",
+              "quantity": 1
+          }
+      },
+      "priceRequestInformation ": {
+          "negotiatedFaresOnly": false,
+          "tpaExtensions": {
+              "priority": {
+                  "price": {
+                      "priority": 1
+                  },
+                  "directFlights": {
+                      "priority": 2
+                  },
+                  "time": {
+                      "priority": 3
+                  },
+                  "vendor": {
+                      "priority": 4
+                  }
+              }
+          }
+      }
+  },
+  "tpaExtensions": {
+      "intelliSellTransaction": {
+          "requestType": {
+              "name": "200ITINS"
+          }
+      }
+  }
+}
