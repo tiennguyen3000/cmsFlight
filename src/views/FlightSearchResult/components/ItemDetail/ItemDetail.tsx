@@ -14,12 +14,7 @@ export default function ItemDetail() {
   };
 
   return (
-    <Card
-      expand={expanded}
-      onClick={handleExpandClick}
-      aria-expanded={expanded}
-      aria-label="show more"
-    >
+    <Card onClick={handleExpandClick}>
       <CardContent>
         <ItemInfo />
       </CardContent>
