@@ -54,8 +54,8 @@ const Topbar = ({
           component={'img'}
           src={
             mode === 'light' && !colorInvert
-              ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-              : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
+              ? '/SmileTrip_Logo.svg'
+              : '/SmileTrip_Logo_Negative.svg'
           }
           height={1}
           width={1}

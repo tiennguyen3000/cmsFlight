@@ -9,6 +9,12 @@ const getTheme = (mode: string, themeToggler: () => void): Theme =>
       palette: mode === 'light' ? light : dark,
       shadows: shadows(mode),
       typography: {
+        subtitle1: {
+          fontSize: 12,
+        },
+        subtitle2: {
+          fontSize: 12,
+        },
         fontFamily: '"Inter", sans-serif',
         button: {
           textTransform: 'none',

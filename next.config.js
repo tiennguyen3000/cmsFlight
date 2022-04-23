@@ -1,6 +1,8 @@
-// next.config.js
+const { i18n } = require('./i18n.config');
+
 module.exports = {
-  images: {
-    domains: ['assets.maccarianagency.com'],
+  i18n: {
+    locales: ['vi', 'en', 'jp'],
+    defaultLocale: 'vi',
   },
-}
+};

@@ -5,15 +5,16 @@ import queryString from 'query-string';
 
 // Please have a look at here `https://github.com/axios/axios#request-
 //config` for the full list of configs
-
+const baseURL = process.env.BASE_URL_API_GATEWAY || 'http://localhost:3000/api';
 const axiosClientServer = axios.create({
-  baseURL: 'http://localhost:3000/api',
+  baseURL: baseURL,
   headers: {
-    'content-type': 'application/json',
-    'Accept': '*/*',
+    'Content-Type': 'application/json',
+    Accept: '*/*',
   },
   paramsSerializer: (params) => queryString.stringify(params),
 });
+
 axiosClientServer.interceptors.request.use(async (config) => {
   delete config.headers.Authorization;
   // Handle token here ...
@@ -27,9 +28,8 @@ axiosClientServer.interceptors.response.use(
     return response;
   },
   (error) => {
-    
     // Handle errors
-    throw {error};
+    throw { error };
   },
 );
 export default axiosClientServer;

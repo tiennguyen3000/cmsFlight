@@ -1,6 +1,18 @@
 const pages = {
   landings: [
     {
+      title: 'Screen006',
+      href: '/Screen006',
+    },
+    {
+      title: 'Screen007',
+      href: '/Screen007',
+    },
+    {
+      title: 'Screen008',
+      href: '/Screen008',
+    },
+    {
       title: 'Flight Search Result',
       href: '/flight-search-result-page',
     },

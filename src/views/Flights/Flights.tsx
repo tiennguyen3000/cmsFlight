@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 
@@ -9,110 +9,43 @@ import {
   Advantages,
   Customers,
   Features,
-  Hero,
   Jobs,
   Newsletter,
-  Partners,
-  Process,
   PromoNumbers,
-  Questions,
   TrustedCompanies,
-  Destination,
-  TicketOptions,
-  PeopleOptions,
-  DestinationFinderList,
-  AirportLocation,
-  FlightsResultFilter,
+  FlightsResult,
+  Form,
 } from './components';
-import { Grid, FormControl,
-  InputLabel,
-  MenuItem,
-  Select,
-  SelectChangeEvent } from '@mui/material';
+import FlightsRouteDetail from './components/FlightsRouteDetail';
+import { FlightsResDto } from 'service/flights/FlightsResDto';
+import { BargainFinderMaxResDto } from 'service/flights/BargainFinderMaxResDto';
 
-const JobListing = (): JSX.Element => {
-  const [ticketOptions, setTicketOptions] = React.useState<string>('Y');
-
+const Flights = (): JSX.Element => {
+  const [ticketOptions, setTicketOptions] = useState<string>('Y');
+  const [flightResult, setFlightResult] = useState<BargainFinderMaxResDto>(null);
   const ticketOptionOnClick = (newValue: string) => {
     setTicketOptions(newValue);
   };
+
+  //handle Form OnSubmit
+  const handleFormSubmit = (data: BargainFinderMaxResDto) => {
+    setFlightResult(data);
+    console.log("data"+ JSON.stringify(data));
+  };
   return (
     <Main>
-      <Box>
-        <Grid container spacing={1}>
-          <Grid
-            item
-            alignItems={'flex-start'}
-            justifyContent={'center'}
-            xs={12}
-            md={4}
-            marginBottom={2}
-          >
-            <Destination />
-          </Grid>
-          <Grid item xs={12} md={4} marginBottom={2}>
-            <TicketOptions
-              id="ticket-option"
-              value={ticketOptions}
-              ticketOptionOnClick={ticketOptionOnClick}
-            />
-          </Grid>
-        
-          <Grid item xs={12} md={4} marginBottom={2}>
-            <PeopleOptions />
-          </Grid>
-        </Grid>
+      <Box marginTop={-5} marginBottom={-5}>
         <Container>
-          <DestinationFinderList />
-        </Container>
-        {/* <Container>
-          <AirportLocation label="Bay từ" onChange={} />
-        </Container> */}
-        <Box bgcolor={'alternate.main'}>
-          <Container>
-            <Questions />
-          </Container>
-        </Box>
-        <Container>
-          <FlightsResultFilter />
+          <Form onSubmit={handleFormSubmit} />
         </Container>
       </Box>
-
       <Box bgcolor={'alternate.main'}>
         <Container>
-          <AboutTop />
+          <FlightsResult data={flightResult} />
         </Container>
       </Box>
-      <Container>
-        <Jobs />
-      </Container>
-      <Box bgcolor={'alternate.main'}>
-        <Container>
-          <PromoNumbers />
-        </Container>
-      </Box>
-      <Container>
-        <Features />
-      </Container>
-      <Box bgcolor={'alternate.main'}>
-        <Container>
-          <Advantages />
-        </Container>
-      </Box>
-      <Container>
-        <TrustedCompanies />
-      </Container>
-      <Container paddingY={0}>
-        <Divider />
-      </Container>
-      <Container>
-        <Customers />
-      </Container>
-      <Container paddingTop={'0 !important'}>
-        <Newsletter />
-      </Container>
     </Main>
   );
 };
 
-export default JobListing;
+export default Flights;

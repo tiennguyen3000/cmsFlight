@@ -1,0 +1,50 @@
+[
+  {
+    "area": "Hồ Chí Minh",
+    "airport": "Tân Sơn Nhất",
+    "national": "Việt Nam",
+    "code": "SGN"
+  },
+  {
+    "area": "Hà Nội",
+    "airport": "Nội Bài",
+    "national": "Việt Nam",
+    "code": "HAN"
+  },
+  {
+    "area": "Khánh Hoà",
+    "airport": "Sân Bay Nha Trang",
+    "national": "Việt Nam",
+    "code": "CXR"
+  },
+  {
+    "area": "Lâm Đồng",
+    "airport": "Liên Khương",
+    "national": "Việt Nam",
+    "code": "DLI"
+  },
+  {
+    "area": "Kiên Giang",
+    "airport": "Phú Quốc",
+    "national": "Việt Nam",
+    "code": "PQC"
+  },
+  {
+    "area": "Tokyo",
+    "airport": "Narita",
+    "national": "Nhật Bản",
+    "code": "NRT"
+  },
+  {
+    "area": "Tokyo",
+    "airport": "Haneda",
+    "national": "Nhật Bản",
+    "code": "HND"
+  },
+  {
+    "area": "Osaka",
+    "airport": "Kansai",
+    "national": "Nhật Bản",
+    "code": "KIX"
+  }
+]

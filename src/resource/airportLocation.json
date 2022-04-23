@@ -1,0 +1,72 @@
+[
+  {
+    "area": "",
+    "airport": "",
+    "national": "",
+    "code": "",
+    "label": ""
+  },
+  {
+    "area": "Hồ Chí Minh",
+    "airport": "Tân Sơn Nhất",
+    "national": "Việt Nam",
+    "code": "SGN",
+    "label": "Tân Sơn Nhất, Hồ Chí Minh, Việt Nam (SGN)"
+  },
+  {
+    "area": "Hà Nội",
+    "airport": "Nội Bài",
+    "national": "Việt Nam",
+    "code": "HAN",
+    "label": "Nội Bài, Hà Nội, Việt Nam (HAN)"
+  },
+  {
+    "area": "Khánh Hoà",
+    "airport": "Sân Bay Nha Trang",
+    "national": "Việt Nam",
+    "code": "CXR",
+    "label": "Nha Trang, Khánh Hoà, Việt Nam (CXR)"
+  },
+  {
+    "area": "Lâm Đồng",
+    "airport": "Liên Khương",
+    "national": "Việt Nam",
+    "code": "DLI",
+    "label": "Liên Khương, Lâm Đồng, Việt Nam (DLI)"
+  },
+  {
+    "area": "Kiên Giang",
+    "airport": "Phú Quốc",
+    "national": "Việt Nam",
+    "code": "PQC",
+    "label": "Phú Quốc, Kiên Giang, Việt Nam (PQC)"
+  },
+  {
+    "area": "Tokyo",
+    "airport": "Haneda",
+    "national": "Nhật Bản",
+    "code": "HND",
+    "label": "Haneda, Tokyo, Nhật Bản (HND)"
+  },
+  {
+    "area": "Osaka",
+    "airport": "Kansai",
+    "national": "Nhật Bản",
+    "code": "KIX",
+    "label": "Kansai, Osaka, Nhật Bản (KIX)"
+  },
+  {
+    "area": "Tokyo",
+    "airport": "Narita",
+    "national": "Nhật Bản",
+    "code": "NRT",
+    "label": "Narita, Tokyo, Nhật Bản (NRT)"
+  },
+  {
+    "area": "Đà Nẵng",
+    "airport": "Đà Nẵng",
+    "national": "Việt Nam",
+    "code": "DAD",
+    "label": "Đà Nẵng, Đà Nẵng, Việt Nam (DAD)"
+  }
+]
